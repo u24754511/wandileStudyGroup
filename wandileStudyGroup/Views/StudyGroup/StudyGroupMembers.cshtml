@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "StudyGroupMembers";
+}
+@model IEnumerable<wandileStudyGroup.Models.StudentClass>
+
+<h2>Study Group Members</h2>
+
+<table class="table">
+
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.StudentNumber)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.FName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.LName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.StudentNumber)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.FName)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.LName)
+            </th>
+
+            <th>
+                @Html.DisplayFor(modelItem => item.Email)
+            </th>
+
+        </tr>
+
+    }
+
+
+
+
+
+
+</table>
+
+
+
+
