@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>wandileStudyGroup</RootNamespace>
-    <AssemblyName>wandileStudyGroup</AssemblyName>
+    <RootNamespace>wandileStudyGroup_Prac2</RootNamespace>
+    <AssemblyName>wandileStudyGroup_Prac2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -145,9 +145,26 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HTML\Aphiwe.html" />
+    <Content Include="HTML\Images\Aphiwe.png" />
+    <Content Include="HTML\Images\Gara.png" />
+    <Content Include="HTML\Images\Gojo.png" />
+    <Content Include="HTML\Images\Goku.png" />
+    <Content Include="HTML\Images\Kakashi.png" />
+    <Content Include="HTML\Images\Mary.png" />
+    <Content Include="HTML\Images\Naruto.png" />
+    <Content Include="HTML\Images\Odaho.png" />
+    <Content Include="HTML\Images\Rengoku.png" />
+    <Content Include="HTML\Images\Sanele.png" />
+    <Content Include="HTML\Images\Wandile.png" />
+    <Content Include="HTML\Mary.html" />
+    <Content Include="HTML\Odaho.html" />
+    <Content Include="HTML\Sanele.html" />
+    <Content Include="HTML\Wandile.html" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -180,6 +197,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\StudyGroup\StudyGroupMembers.cshtml" />
+    <Content Include="Views\StudyGroup\Sample.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,156 @@
+﻿body 
+{
+    background-color:burlywood;
+}
+.everything {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.everything {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+    background-color: black;
+}
+
+    .everything li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0; /* Ensures no extra space */
+    }
+    .everything li {
+        border-right: 2px solid white;
+    }
+
+
+.moduletable {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+}
+
+.tablestyles {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-color: blanchedalmond;
+    column-span: all;
+}
+
+    .tablestyles th, .tablestyles td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px black;
+    }
+
+    .tablestyles th {
+        background: black;
+        color: aqua;
+    }
+
+img:hover {
+    transform: scaleX(-1);
+}
+
+
+    .everything a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        transition: background 0.3s ease;
+    }
+
+        .everything a:hover {
+            background-color: grey;
+        }
+
+        .everything a.active {
+            background-color: green;
+        }
+
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+    border: 4px solid black;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) 
+{
+    .everything {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .everything {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+        .everything a {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-right: none;
+            border-bottom: 2px solid;
+        }
+
+            .everything a:last-child {
+                border-bottom: none;
+            }
+}
+
+
+.section-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+    .section-box .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* This will helping in ensuring that the text and image align well */
+    }
+
+.bio-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 15px;
+    order: -1; /* This will helping in ensuring that the image stays on the left */
+}
+
+.hobby-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 15px;
+    order: 1; /*This will helping in ensuring that the image stays on the right */
+}
+
+

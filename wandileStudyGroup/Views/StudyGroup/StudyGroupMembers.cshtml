@@ -2,52 +2,59 @@
 @{
     ViewBag.Title = "StudyGroupMembers";
 }
-@model IEnumerable<wandileStudyGroup.Models.StudentClass>
+@model IEnumerable<wandileStudyGroup_Prac2.Models.StudentClass>
 
-<h2>Study Group Members</h2>
+<h1>List of People</h1>
 
-<table class="table">
+<table class="tablestyles">
+
+
 
     <tr>
 
-        <th>
+        <td>
             @Html.DisplayNameFor(model => model.StudentNumber)
-        </th>
+        </td>
 
-        <th>
+        <td>
             @Html.DisplayNameFor(model => model.FName)
-        </th>
+        </td>
 
-        <th>
+        <td>
             @Html.DisplayNameFor(model => model.LName)
-        </th>
+        </td>
 
-        <th>
+        <td>
             @Html.DisplayNameFor(model => model.Email)
-        </th>
-
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.myLink)
+        </td>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
 
-            <th>
+            <td>
                 @Html.DisplayFor(modelItem => item.StudentNumber)
-            </th>
+            </td>
 
-            <th>
+            <td>
                 @Html.DisplayFor(modelItem => item.FName)
-            </th>
+            </td>
 
-            <th>
+            <td>
                 @Html.DisplayFor(modelItem => item.LName)
-            </th>
+            </td>
 
-            <th>
+            <td>
                 @Html.DisplayFor(modelItem => item.Email)
-            </th>
-
+            </td>
+            <td>
+                @*The a tag is needed to act as a link between the two pages*@
+                <a href="@Url.Content(item.myLink)" target="_blank" class="btn btn-primary">Link</a>
+            </td>
         </tr>
 
     }

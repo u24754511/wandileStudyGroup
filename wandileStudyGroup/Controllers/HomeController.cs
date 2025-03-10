@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace wandileStudyGroup.Controllers
+namespace wandileStudyGroup_Prac2.Controllers
 {
     public class HomeController : Controller
     {
