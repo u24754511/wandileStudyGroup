@@ -2,7 +2,11 @@
 @{
     ViewBag.Title = "StudyGroupMembers";
 }
-@model IEnumerable<wandileStudyGroup_Prac2.Models.StudentClass>
+@model IEnumerable<wandileStudyGroup_Prac4.Models.StudentClass>
+
+@section Scripts {
+    <script src="~/Scripts/MyScript.js"></script>
+}
 
 <h1>List of People</h1>
 
@@ -30,33 +34,25 @@
         <td>
             @Html.DisplayNameFor(model => model.myLink)
         </td>
+        <td>
+            @Html.DisplayNameFor(model => model.remover)
+        </td>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
-
+            <td>@Html.DisplayFor(modelItem => item.StudentNumber)</td>
+            <td>@Html.DisplayFor(modelItem => item.FName)</td>
+            <td>@Html.DisplayFor(modelItem => item.LName)</td>
+            <td>@Html.DisplayFor(modelItem => item.Email)</td>
             <td>
-                @Html.DisplayFor(modelItem => item.StudentNumber)
-            </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.FName)
-            </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.LName)
-            </td>
-
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @*The a tag is needed to act as a link between the two pages*@
                 <a href="@Url.Content(item.myLink)" target="_blank" class="btn btn-primary">Link</a>
             </td>
+            <td>
+                <button class="btn btn-danger deleteBtn">Delete</button>
+            </td>
         </tr>
-
     }
 
 

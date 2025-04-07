@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace wandileStudyGroup_Prac2.Models
+namespace wandileStudyGroup_Prac4.Models
 {
     public class StudentClass
     {
@@ -23,5 +23,8 @@ namespace wandileStudyGroup_Prac2.Models
         // Add a property to the model called ‘myLink’ of type string.
         [Display(Name = "Link to Personal Page")]
         public string myLink { get; set; }
+
+        [Display(Name = "Delete")]
+        public string remover { get; set; }
     }
 }
